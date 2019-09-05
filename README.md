@@ -1,2 +1,2 @@
-# 2019Fall_WhatDoYouMeme
+# Main in class project for Fall 2019
 Meme card game
