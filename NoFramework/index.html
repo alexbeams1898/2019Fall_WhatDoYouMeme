@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Jquery Demo</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>jQuery Demo</h1>
+          <h1>Second Header</h1>
+        </div>
+        <div class="col"></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+          </div>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-success" id="new">
+            Success
+          </button>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap" />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $("#new").on("click", function() {
+        console.log($(".alert"));
+        $(".alert")
+          .clone()
+          .appendTo(".alert-col");
+      });
+    });
+  </script>
+</html>
