@@ -3,3 +3,7 @@
     <h1>This is page about the awesome VUE</h1>
   </div>
 </template>
+
+<script></script>
+
+<style></style>
